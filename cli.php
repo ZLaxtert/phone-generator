@@ -27,6 +27,7 @@ enterCountry:
 echo "
      $GR>>>$BL COUNTRY $GR<<<$WH
  [$BL 1$WH ]$YL USA$WH     [$BL 2 $WH]$YL CANADA$WH
+ [$BL 3 $WH]$YL ITALY$WH
       [$BL 99 $WH]$YL EXIT$GR
  >> $WH";
 $ct = trim(fgets(STDIN));
@@ -34,6 +35,8 @@ if($ct == 1) {
     $GetCountry = "us";
 }else if($ct == 2) {
     $GetCountry = "ca";
+}else if($ct == 3) {
+    $GetCountry = "it";
 }else if($ct == 99) {
     exit("\n\n [!] Thanks for Using [!]\n\n");
 }else{
