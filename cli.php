@@ -52,7 +52,7 @@ echo PHP_EOL.PHP_EOL;
 for ($i=0; $i < $count; $i++) { 
     $no++;
 
-    $api = "https://darkxcode4041.ddns.net/other/generator_phone/?submit=1&count=1&country=$GetCountry";
+    $api = "https://api.darkxcode.site/other/generator_phone/?submit=1&count=1&country=$GetCountry";
     // CURL
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $api);
